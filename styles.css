@@ -75,6 +75,11 @@ section {
   align-items: center;
 }
 
+.logo-face {
+  height: 35px;
+  width: auto;
+}
+
 .imglogo {
   height: 35px;
   width: auto;
