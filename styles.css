@@ -70,9 +70,9 @@ section {
 }
 
 .logo-svg {
-  height: 35px;
+  height: 70px;
   width: auto;
-  display: block;
+  align-items: center;
 }
 
 .nav-links {
