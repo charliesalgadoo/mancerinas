@@ -53,7 +53,7 @@ section {
   top: 0;
   width: 100%;
   height: 60px;
-  background-color: rgba(15, 15, 16, 0.85);
+  background: #000;
   backdrop-filter: blur(20px);
   display: flex;
   justify-content: space-between;
@@ -63,10 +63,16 @@ section {
   z-index: 1000;
 }
 
-.logo img {
+.logo {
   color: white;
   height: 35px;
   width: auto;
+}
+
+.logo-svg {
+  height: 35px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
