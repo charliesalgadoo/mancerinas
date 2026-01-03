@@ -75,6 +75,11 @@ section {
   align-items: center;
 }
 
+.imglogo {
+  height: 35px;
+  width: auto;
+}
+
 .nav-links {
   color: white;
   text-decoration: none;
