@@ -63,7 +63,8 @@ section {
   z-index: 1000;
 }
 
-.logo img {
+.logo {
+  color: white;
   height: 35px;
   width: auto;
 }
@@ -73,6 +74,11 @@ section {
   text-decoration: none;
   font-size: 15px;
   transition: opacity 0.3s ease;
+  list-style: none;   /* quita los puntitos */
+  display: flex;      /* los pone en línea */
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
@@ -80,6 +86,7 @@ section {
   color: #e5e5e7;
   font-size: 14px;
   transition: opacity 0.3s ease;
+
 }
 
 .nav-links a:hover {
