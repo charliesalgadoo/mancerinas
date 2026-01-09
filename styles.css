@@ -4,18 +4,19 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  letter-spacing: -1.2px;
   background-color: #0f0f10; /* negro Apple */
   color: #e5e5e7; /* gris claro Apple */
   padding-top: 60px;
 }
 
 .hero {
-  background: radial-gradient(
-    circle at top,
-    #2a1c15 0%,
-    #0f0f10 70%
-  );
+  background-image: url(bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   text-align: center;
   padding: 140px 20px;
@@ -34,8 +35,8 @@ body {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 24px;
-  background-color: #cfa670;
-  color: #2e1f18;
+  background-color: #2e2e2e;
+  color: #e2e2e2;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -61,10 +62,12 @@ section {
   padding: 0 30px;
   box-shadow: 0 1px 10px rgba(0,0,0,0.05);
   z-index: 1000;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 .logo {
-  color: white;
+
   height: 35px;
   width: auto;
 }
@@ -80,9 +83,12 @@ section {
   width: auto;
 }
 
-.imglogo {
+
+
+.imglogo img {
   height: 35px;
   width: auto;
+  display: block; /* importantísimo */
 }
 
 .nav-links {
@@ -102,8 +108,13 @@ section {
   color: #e5e5e7;
   font-size: 14px;
   transition: opacity 0.3s ease;
-
 }
+
+a:hover {
+  color: #7CCCC4;
+  cursor: pointer;
+}
+
 
 .nav-links a:hover {
   opacity: 0.7;
