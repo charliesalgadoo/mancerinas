@@ -67,7 +67,6 @@ section {
 }
 
 .logo {
-
   height: 35px;
   width: auto;
 }
@@ -82,6 +81,18 @@ section {
   height: 10px;
   width: auto;
 }
+
+.social-link {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  height: 20px;
+  width: auto;
+  display: block;
+}
+
 
 
 
