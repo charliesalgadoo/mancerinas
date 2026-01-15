@@ -4,13 +4,21 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  letter-spacing: -1.2px;
+  font-family: 'Montserrat', sans-serif;
   background-color: #0f0f10; /* negro Apple */
   color: #e5e5e7; /* gris claro Apple */
   padding-top: 60px;
 }
+h1, h2, h3 {
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+p {
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
 
 .hero {
   background-image: url(bg.png);
@@ -20,11 +28,14 @@ body {
   color: white;
   text-align: center;
   padding: 140px 20px;
+  
 }
 
 .hero h1 {
   font-size: 36px;
   margin-bottom: 10px;
+  letter-spacing: -0.5px;
+  
 }
 
 .hero p {
@@ -38,7 +49,6 @@ body {
   background-color: #2e2e2e;
   color: #e2e2e2;
   text-decoration: none;
-  font-weight: bold;
   border-radius: 5px;
 }
 
@@ -63,7 +73,7 @@ section {
   box-shadow: 0 1px 10px rgba(0,0,0,0.05);
   z-index: 1000;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 .logo {
@@ -103,7 +113,7 @@ section {
 }
 
 .nav-links {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 15px;
   transition: opacity 0.3s ease;
@@ -143,4 +153,79 @@ a:hover {
   border-radius: 16px;
   overflow: hidden;
 }
+
+.branches {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.branches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+footer{
+  background-color: rgb(0, 0, 0);
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 15px;
+}
+
+.container{
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto lfr auto;
+}
+
+t{
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 28px;
+  color: #7CCCC4;
+
+}
+
+
+
+.hero-philosophy {
+  background-image: url(philosophy.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 70vh; /* 🔑 ESTO */
+  display: flex;
+  align-items: center;
+
+  padding: 0 70px; /* quitamos el padding vertical */
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 80px 40px;
+  align-items: center;
+}
+
+
+.split-image {
+  background-image: url("philosophy-two.png");
+  background-size: cover;
+  background-position: center;
+    min-height: 420px; /* 🔑 ESTO ES LO QUE TE FALTABA */
+  border-radius: 4px;
+}
+
+.split-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
 
