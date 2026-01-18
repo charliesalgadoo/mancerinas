@@ -8,15 +8,23 @@ body {
   background-color: #0f0f10; /* negro Apple */
   color: #e5e5e7; /* gris claro Apple */
   padding-top: 60px;
+  
 }
-h1, h2, h3 {
+h1, h3 {
   font-weight: 500;
-  letter-spacing: -0.5px;
 }
+
+h2 {
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+
 
 p {
   font-weight: 300;
-  letter-spacing: -0.5px;
 }
 
 
@@ -34,8 +42,6 @@ p {
 .hero h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  letter-spacing: -0.5px;
-  
 }
 
 .hero p {
@@ -50,6 +56,7 @@ p {
   color: #e2e2e2;
   text-decoration: none;
   border-radius: 5px;
+  
 }
 
 section {
@@ -185,8 +192,8 @@ t{
   font-weight: 500;
   letter-spacing: 3px;
   font-size: 28px;
-  color: #7CCCC4;
-
+  color: #ffffff;
+  text-align: center;
 }
 
 
@@ -226,6 +233,20 @@ t{
   flex-direction: column;
   justify-content: center;
   padding: 40px;
+}
+
+.icon{
+  height: 70px;
+  width: auto;
+}
+.icon-class{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-section{
+  padding: 35px;
 }
 
 
