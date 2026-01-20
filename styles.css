@@ -249,4 +249,55 @@ t{
   padding: 35px;
 }
 
+.container-contacto{
+  margin: 80px auto;
+  width: 90%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
 
+
+.element-telefono{
+  background-color: rgb(10, 10, 10);
+  padding:35px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.element-correo{
+  background-color: rgb(10, 10, 10);
+  padding:35px;
+  text-align: center;
+  align-items: center;
+}
+.element-ubicaciones{
+  background-color: rgb(10, 10, 10);
+  padding:35px;
+  text-align: center;
+  align-items: center;
+
+}
+.element-instagram{
+  background-color: rgb(10, 10, 10);
+    padding:35px;
+  text-align: center;
+  align-items: center;
+}
+
+.element-facebook{
+  background-color: rgb(10, 10, 10);
+  padding:35px;
+  text-align: center;
+  align-items: center;
+}
+
+.element-x{
+  background-color: rgb(10, 10, 10);
+  padding:35px;
+  text-align: center;
+  align-items: center;
+}
