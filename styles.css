@@ -245,20 +245,38 @@ t{
   margin-right: auto;
 }
 
-.top-section{
-  padding: 35px;
+.top-section {
+  padding: 40px;
 }
+
+
+.contact-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 
 .container-contacto{
   margin: 80px auto;
   width: 90%;
-  height: 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
 }
 
+.container-contacto > a > div {
+  background-color: #0a0a0a;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 6px;
+
+  transition:
+    transform 0.4s ease,
+    background-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
 
 .element-telefono{
   background-color: rgb(10, 10, 10);
