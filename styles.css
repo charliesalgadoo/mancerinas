@@ -59,6 +59,59 @@ p {
   
 }
 
+
+
+.menu-toggle {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .nav-links {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #e5e5e7;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: rgba(0,0,0,0.96);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+
+
+
 section {
   padding: 120px 20px;
   max-width: 900px;
@@ -264,18 +317,6 @@ t{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
-}
-
-.container-contacto > a > div {
-  background-color: #0a0a0a;
-  padding: 40px 30px;
-  text-align: center;
-  border-radius: 6px;
-
-  transition:
-    transform 0.4s ease,
-    background-color 0.4s ease,
-    box-shadow 0.4s ease;
 }
 
 .element-telefono{
