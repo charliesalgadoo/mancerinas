@@ -21,6 +21,14 @@ h2 {
   font-size: 36px;
 }
 
+h4{
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+}
+
 
 
 p {
@@ -113,8 +121,8 @@ p {
 
 
 section {
-  padding: 120px 20px;
-  max-width: 900px;
+  padding: 60px 20px;
+  max-width: 1000px;
   margin: auto;
   color: #d1d1d1;
 }
@@ -262,13 +270,14 @@ t{
   align-items: center;
 
   padding: 0 70px; /* quitamos el padding vertical */
+
 }
 
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  padding: 80px 40px;
+  gap: 40px;
+  padding: 50px 20px;
   align-items: center;
 }
 
@@ -277,7 +286,7 @@ t{
   background-image: url("philosophy-two.png");
   background-size: cover;
   background-position: center;
-    min-height: 420px; /* 🔑 ESTO ES LO QUE TE FALTABA */
+  min-height: 315px; /* 🔑 ESTO ES LO QUE TE FALTABA */
   border-radius: 4px;
 }
 
@@ -314,7 +323,7 @@ t{
   margin: 80px auto;
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
 }
