@@ -370,3 +370,16 @@ t{
   align-items: center;
 
 }
+
+iframe {
+  width: 100%;      /* Ocupa el 100% del espacio disponible, no 600px */
+  height: 300px;    /* Una altura buena para móvil */
+  display: block;   /* Evita espacios extraños abajo */
+}
+
+/* Opcional: Para pantallas grandes, recuperamos la altura original */
+@media (min-width: 768px) {
+  iframe {
+    height: 450px;
+  }
+}
