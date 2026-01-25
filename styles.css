@@ -376,6 +376,11 @@ iframe {
   height: 300px;    /* Una altura buena para móvil */
   display: block;   /* Evita espacios extraños abajo */
 }
+@media (max-width: 768px) {
+  .branches-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Opcional: Para pantallas grandes, recuperamos la altura original */
 @media (min-width: 768px) {
