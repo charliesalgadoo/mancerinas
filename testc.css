@@ -1,0 +1,166 @@
+/* ================= RESET ================= */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0f0f10;
+  color: #e5e5e7;
+  padding-top: 60px;
+}
+
+h1,h2,h3,h4 { font-weight: 500; }
+p { font-weight: 300; }
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: #000;
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 1000;
+  letter-spacing: 1.5px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e5e5e7;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover { color: #7CCCC4; }
+
+/* ================= HERO LUXURY ================= */
+.hero {
+  position: relative;
+  background-image: url(bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.85));
+}
+
+.hero-content { position: relative; z-index: 2; }
+
+.hero-sub {
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+/* BOTÓN LUXURY */
+.btn-luxury {
+  margin-top: 35px;
+  padding: 14px 34px;
+  border: 1px solid #7CCCC4;
+  background: transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-luxury:hover {
+  background: #7CCCC4;
+  color: #000;
+}
+
+/* ================= ABOUT ================= */
+.about-luxury {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 120px 10%;
+  gap: 60px;
+}
+
+.about-image {
+  background-image: url("luxury-food.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  border-radius: 12px;
+}
+
+.about-text p {
+  margin: 25px 0;
+  line-height: 1.9;
+  opacity: 0.85;
+}
+
+/* ================= MENÚ ================= */
+.menu-luxury {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.menu-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.menu-grid div {
+  padding: 25px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ================= VALORES ================= */
+.values-luxury {
+  padding: 120px 20px;
+  background: #0a0a0b;
+  text-align: center;
+}
+
+.values-grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.value-item::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #7CCCC4;
+  margin: 0 auto 18px auto;
+  opacity: 0.6;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .about-luxury { grid-template-columns: 1fr; }
+  .menu-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr; gap: 40px; }
+}
