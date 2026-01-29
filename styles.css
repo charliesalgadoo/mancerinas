@@ -15,10 +15,11 @@ h1, h3 {
 }
 
 h2 {
+  font-size: 44px;
   font-weight: 500;
-  letter-spacing: 1.5px;
+  margin: 15px 0;
   text-transform: uppercase;
-  font-size: 36px;
+  letter-spacing: 1.5px;
 }
 
 h4{
@@ -46,6 +47,32 @@ p {
   padding: 140px 20px;
   
 }
+
+.text-link{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.text-link b {
+  text-decoration: none;
+  color: #e5e5e7;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+}
+
+b:hover {
+  color: #415352;
+  cursor: pointer;
+}
+
+
+.text-link b:hover {
+  opacity: 0.7;
+}
+
+
 
 .hero h1 {
   font-size: 36px;
@@ -388,11 +415,6 @@ iframe {
   color: #9fa3a7;
 }
 
-.philo-intro h2 {
-  font-size: 44px;
-  font-weight: 500;
-  margin: 15px 0;
-}
 
 .philo-lead {
   max-width: 720px;
@@ -533,6 +555,44 @@ iframe {
     gap: 40px;
   }
 }
+
+
+
+
+.menu-luxury {
+  max-width: 900px;
+  margin: 0 auto 120px;
+  display: grid;
+  gap: 80px;
+}
+
+.menu-category h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 35px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding-bottom: 15px;
+}
+
+/* ÍTEMS */
+.menu-item {
+  display: flex;
+  padding: 14px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+
+
+/* PRECIO */
+.menu-item span:last-child {
+  color: #7CCCC4;
+  font-weight: 300;
+  text-align: right;
+}
+
 
 
 
