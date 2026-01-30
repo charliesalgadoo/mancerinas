@@ -404,7 +404,7 @@ iframe {
 
 /* ================= FILOSOFÍA LUXURY ================= */
 
-.philosophy-luxury {
+.philosophy {
   padding: 120px 20px;
  
   text-align: center;
@@ -919,7 +919,7 @@ filosofía:
 
   <header class="hero-philosophy">
   </header>
-  <section class="philosophy-luxury">
+  <section class="philosophy">
 
   <div class="philo-intro">
     <span class="tag">Nuestra esencia</span>

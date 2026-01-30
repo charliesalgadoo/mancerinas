@@ -211,6 +211,11 @@ section {
   display: block; /* importantísimo */
 }
 
+img:hover{
+  cursor: pointer;
+
+}
+
 .nav-links {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -314,7 +319,7 @@ t{
 
 
 .split-image {
-  background-image: url("philosophy-two.png");
+
   background-size: cover;
   background-position: center;
   min-height: 315px; /* 🔑 ESTO ES LO QUE TE FALTABA */
@@ -340,6 +345,7 @@ t{
 
 .top-section {
   padding: 40px;
+  text-align: center;
 }
 
 
@@ -403,9 +409,8 @@ iframe {
 
 /* ================= FILOSOFÍA LUXURY ================= */
 
-.philosophy-luxury {
-  padding: 120px 20px;
- 
+.philosophy {
+  padding: 70px 20px;
   text-align: center;
 }
 
@@ -414,6 +419,7 @@ iframe {
   font-size: 15px;
   letter-spacing: 4px;
   color: #9fa3a7;
+  text-align: center;
 }
 
 
@@ -558,43 +564,98 @@ iframe {
 }
 
 
-
-
-.menu-luxury {
-  max-width: 900px;
-  margin: 0 auto 120px;
-  display: grid;
-  gap: 80px;
+.menu-section {
+  max-width: none;   /* 🔥 rompe el límite de 1000px */
+  margin: 0;         /* 🔥 quita el centrado */
+  padding: 0; 
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* pantalla completa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.menu-category h3 {
+.menu-content {
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.menu-content h2 {
+  font-size: 38px;           /* más fino, menos exagerado */
+  font-weight: 400;          /* no tan grueso */
+  letter-spacing: 4px;       /* aire europeo */
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 35px;
-  color: #ffffff;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  padding-bottom: 15px;
+  margin-bottom: 18px;
 }
 
-/* ÍTEMS */
+.menu-content p {
+  font-size: 15px;           /* más delicado */
+  font-weight: 300;
+  letter-spacing: 2px;       /* lujo = espacio */
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* CAPA OSCURA PARA TODAS */
+.menu-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* efecto lujo */
+  opacity: 0.35;
+  z-index: 1;
+}
+
+.bg-cafe::before {
+  background-image: url("bg.png");
+}
+
+.bg-postres::before {
+  background-image: url("mancerinas-coffee.png");
+}
+
+.bg-bebidas::before {
+  background-image: url("mancerinas-one.png");
+}
+
+.bg-signature::before {
+  background-image: url("philosophy.png");
+}
+
+.menu-list {
+  width: 380px;
+  max-width: 90%;
+  margin: 25px auto 0 auto;
+}
+
 .menu-item {
   display: flex;
-  padding: 14px;
-  font-size: 17px;
-  letter-spacing: 0.5px;
-}
-
-
-/* PRECIO */
-.menu-item span:last-child {
-  color: #7CCCC4;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 15px;
+  letter-spacing: 1.5px;
   font-weight: 300;
-  text-align: right;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
 }
 
+.menu-item span:first-child {
+  text-transform: uppercase;
+  opacity: 0.9;
+}
 
-
+.menu-item span:last-child {
+  font-weight: 400;
+  letter-spacing: 2px;
+  opacity: 0.85;
+}
 
 
