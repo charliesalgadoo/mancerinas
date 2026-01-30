@@ -296,7 +296,21 @@ t{
 
 
 .hero-philosophy {
-  background-image: url(philosophy.png);
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 70vh; /* 🔑 ESTO */
+  display: flex;
+  align-items: center;
+
+  padding: 0 70px; /* quitamos el padding vertical */
+
+}
+
+.hero-menu {
+  background-image: url("philosophy.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -517,7 +531,7 @@ iframe {
 
 /* ================= VALORES LUXURY ================= */
 
-.values-luxury {
+.values {
   padding: 0px 20px;
   text-align: center;
   margin-bottom: 70px;
