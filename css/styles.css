@@ -416,7 +416,7 @@ t {
 }
 
 .hero-philosophy {
-  background-image: url("../assets/img/mancerinas-product-front-showcase-4.jpeg");
+  background-image: url("../assets/img/mancerinas-product-front-showcase-4-desktop.jpg");
   opacity: 75%;
 }
 
@@ -1211,6 +1211,10 @@ iframe {
     padding-left: 24px;
     padding-right: 24px;
   }
+
+    .hero-philosophy {
+  background-image: url("../assets/img/mancerinas-product-front-showcase-4.jpeg");
+}
 
   .philo-intro h2 {
     font-size: 32px;
