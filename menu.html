@@ -274,11 +274,7 @@
 </section>
 
 
-
-
-
-
-    <footer>
+<footer>
       <div class="footer-logo">
         <a href="index.html">
           <img src="assets/logos/textlogo-white.svg" alt="logo">
@@ -287,14 +283,14 @@
       <div class="footer-iconography">
         <img src="assets/logos/iconography.svg" alt="iconography">
       </div>
-      <p>Independencia Nte. 107, Col Centro, <br>74000 San Martín Texmelucan de Labastida, Pue.</p>
+      <p>Independencia Nte. 107, Col Centro, <br>74000 San Mart&iacute;n Texmelucan de Labastida, Pue.</p>
       <p>Copyright &copy; Mancerinas</p>
     </footer>
-  </div>
+  </div>
 
 <button id="toTop">
-  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
 </svg>
 </button>
 <script src="js/script.js"></script>
@@ -303,19 +299,21 @@
 const toTop = document.getElementById("toTop");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    toTop.style.display = "block";
-  } else {
-    toTop.style.display = "none";
-  }
+  if (window.scrollY > 300) {
+    toTop.style.display = "block";
+  } else {
+    toTop.style.display = "none";
+  }
 });
 
 toTop.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });
 </script>
+
+
 </body>
 </html>
