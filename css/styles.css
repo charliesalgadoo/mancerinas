@@ -3,7 +3,7 @@
 }
 
 :root {
---surface: rgba(255, 255, 255, 0.045);
+  --surface: rgba(255, 255, 255, 0.045);
   --surface-strong: rgba(255, 255, 255, 0.08);
   --surface-border: rgba(255, 255, 255, 0.1);
   --text: #f4f1eb;
@@ -53,10 +53,6 @@ img {
 
 figure {
   margin: 0;
-}
-
-img:hover {
-  cursor: pointer;
 }
 
 a,
@@ -373,6 +369,14 @@ b:hover {
   margin: 0 auto;
 }
 
+.branch-card {
+  min-width: 0;
+}
+
+.branch-card p {
+  margin-top: 10px;
+}
+
 footer {
   background: rgba(7, 7, 8, 0.88);
   padding: 1.25rem 2rem 1.75rem;
@@ -409,7 +413,7 @@ t {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   padding: 0 70px;
@@ -448,10 +452,19 @@ t {
 }
 
 .instagram-embed {
+  width: min(100%, 540px);
+  min-width: 0;
   margin: 0 auto;
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: var(--shadow);
+}
+
+.instagram-media,
+.instagram-embed iframe {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 540px !important;
+  margin: 0 auto !important;
 }
 
 
@@ -833,6 +846,7 @@ iframe {
   background: none;
   color: var(--text);
   cursor: pointer;
+  display: none;
   z-index: 999;
 }
 
@@ -1081,6 +1095,10 @@ iframe {
   .values-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .container-contacto {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 
@@ -1101,10 +1119,10 @@ iframe {
 
   .nav-links {
     position: fixed;
-    top: 60px;
+    top: var(--nav-height);
     left: 0;
     width: 100%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - var(--nav-height));
     background: rgba(0,0,0,0.96);
     flex-direction: column;
     justify-content: center;
@@ -1112,6 +1130,7 @@ iframe {
     gap: 35px;
 
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transition: opacity 0.3s ease;
   }
@@ -1140,6 +1159,8 @@ iframe {
   .split-social .split-text {
     max-width: none;
   }
+
+
 
   .split-image {
     display: none;
@@ -1184,8 +1205,14 @@ iframe {
     min-height: 280px;
   }
 
-  .social-embed iframe {
-    min-height: 500px;
+  .instagram-embed {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .instagram-media,
+  .instagram-embed iframe {
+    max-width: 100% !important;
   }
 
   .social-stage {
@@ -1240,9 +1267,143 @@ iframe {
   .menu-content {
     padding: 34px 20px;
   }
+
+    .bg-calientes::before {
+    background-image: url("../assets/img/mancerinas-product-french-press-service-mobile.jpg");
+  }
+
+  .bg-frias::before {
+    background-image: url("../assets/img/mancerinas-product-soda-strawberry-mobile.jpg");
+  }
+
+  .bg-postres::before {
+    background-image: url("../assets/img/mancerinas-product-ferrero-slice.jpg");
+  }
 }
 
+.container-pastry {
+  width: min(90%, 1200px);
+  margin: 0 auto 75px;
+  display: grid;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+  padding: 88px 0;
+}
+
+.container-pastry h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.pastry-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.pastry-card {
+  min-height: 220px;
+  border-radius: var(--radius-md);
+  padding: 22px;
+  color: var(--text);
+
+  border: 1px solid var(--surface-border);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-soft);
+}
+
+.pastry-card-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.68;
+  transform: scale(1);
+  transition:
+    opacity var(--transition-slow),
+    transform var(--transition-slow);
+}
+
+
+
+.pastry-card:hover,
+.pastry-card:focus-within {
+  border-color: rgba(244, 241, 235, 0.26);
+}
+
+.pastry-card:hover .pastry-card-image,
+.pastry-card:focus-within .pastry-card-image {
+  opacity: 0.48;
+
+}
+
+.pastry-card-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: left;
+}
+
+.pastry-card h3 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  transition:
+    opacity var(--transition-base),
+    transform var(--transition-base);
+}
+
+.pastry-prices {
+  display: grid;
+  gap: 2px;
+  margin-top: 10px;
+  color: rgba(244, 241, 235, 0.9);
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85rem;
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity var(--transition-base),
+    transform var(--transition-base);
+}
+
+.pastry-card:hover h3,
+.pastry-card:focus-within h3 {
+  opacity: 0.82;
+  transform: translateY(-6px);
+}
+
+.pastry-card:hover .pastry-prices,
+.pastry-card:focus-within .pastry-prices {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (hover: none) {
+  .pastry-card-image {
+    opacity: 0.58;
+  }
+
+  .pastry-prices {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
 @media (min-width: 769px) and (max-width: 1024px) {
+  .pastry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .gallery-layout {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -1266,3 +1427,22 @@ iframe {
     height: 450px;
   }
 }
+
+@media (max-width: 768px) {
+  .container-pastry {
+    width: min(92%, 560px);
+    padding: 70px 0;
+  }
+
+  .pastry-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .pastry-card {
+    min-height: 190px;
+  }
+}
+
+
+
