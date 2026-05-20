@@ -273,7 +273,7 @@ section {
 }
 
 .hero {
-  background-image: url(../assets/img/mancerinas-branding-tables.WEBP);
+  background-image: url(../assets/img/mancerinas-branding-tables.webp);
 
 
   background-size: cover;
@@ -416,12 +416,12 @@ t {
 }
 
 .hero-philosophy {
-  background-image: url("../assets/img/mancerinas-branding-showcase-philo.WEBP");
+  background-image: url("../assets/img/mancerinas-branding-showcase-philo.webp");
   opacity: 75%;
 }
 
 .hero-menu {
-  background-image: url("../assets/img/latte-menu.WEBP");
+  background-image: url("../assets/img/latte-menu.webp");
   opacity: 75%;
 }
 
@@ -673,11 +673,11 @@ iframe {
 }
 
 .vision {
-  background-image: url("../assets/img/mancerinas-product-vintage-car-cake-2.WEBP");
+  background-image: url("../assets/img/mancerinas-product-vintage-car-cake-2.webp");
 }
 
 .mission {
-  background-image: url("../assets/img/mancerinas-product-organical.WEBP");
+  background-image: url("../assets/img/mancerinas-product-organical.webp");
 }
 
 .philo-content {
@@ -786,15 +786,15 @@ iframe {
 }
 
 .bg-calientes::before {
-  background-image: url("../assets/img/mancerinas-product-french-press-service.WEBP");
+  background-image: url("../assets/img/mancerinas-product-french-press-service.webp");
 }
 
 .bg-frias::before {
-  background-image: url("../assets/img/mancerinas-product-soda-strawberry.WEBP");
+  background-image: url("../assets/img/mancerinas-product-soda-strawberry.webp");
 }
 
 .bg-postres::before {
-  background-image: url("../assets/img/mancerinas-product-ferrero-slice.WEBP");
+  background-image: url("../assets/img/mancerinas-product-ferrero-slice.webp");
 }
 
 
@@ -1247,15 +1247,15 @@ iframe {
   }
 
     .bg-calientes::before {
-    background-image: url("../assets/img/mancerinas-product-french-press-service-mobile.WEBP");
+    background-image: url("../assets/img/mancerinas-product-french-press-service-mobile.webp");
   }
 
   .bg-frias::before {
-    background-image: url("../assets/img/mancerinas-product-soda-strawberry-mobile.WEBP");
+    background-image: url("../assets/img/mancerinas-product-soda-strawberry-mobile.webp");
   }
 
   .bg-postres::before {
-    background-image: url("../assets/img/mancerinas-product-ferrero-slice.WEBP");
+    background-image: url("../assets/img/mancerinas-product-ferrero-slice.webp");
   }
 }
 
