@@ -70,6 +70,7 @@ const pastryItems = [
   { name: 'Zanahoria', image: 'assets/img/mancerinas-product-ferrero-slice.webp', prices: { Chico: '$400', Mediano: '$550', Grande: '$700' } },
 ];
 
+/*
 function renderPastryCards() {
   const pastryGrid = document.getElementById('pastryGrid');
 
@@ -96,3 +97,4 @@ function renderPastryCards() {
 }
 
 renderPastryCards();
+*/

@@ -1268,6 +1268,13 @@ iframe {
     padding: 34px 20px;
   }
 
+    .menu-section::before {
+    background-attachment: scroll;
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
     .bg-calientes::before {
     background-image: url("../assets/img/mancerinas-product-french-press-service-mobile.webp");
   }
@@ -1277,7 +1284,7 @@ iframe {
   }
 
   .bg-postres::before {
-    background-image: url("../assets/img/mancerinas-product-ferrero-slice.webp");
+    background-image: url("../assets/img/mancerinas-product-ferrero-slice-mobile.webp");
   }
 }
 
