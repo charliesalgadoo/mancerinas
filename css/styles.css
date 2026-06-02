@@ -456,14 +456,20 @@ t {
   min-width: 0;
   margin: 0 auto;
   border-radius: var(--radius-md);
-  overflow: hidden;
+  overflow: visible;
 }
 
-.instagram-media,
-.instagram-embed iframe {
+.instagram-media {
   width: 100% !important;
   min-width: 0 !important;
   max-width: 540px !important;
+  margin: 0 auto !important;
+}
+
+.instagram-embed iframe {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
   margin: 0 auto !important;
 }
 
@@ -1205,15 +1211,21 @@ iframe {
     min-height: 280px;
   }
 
+  
   .instagram-embed {
-    width: 100%;
+    width: calc(100vw - 40px);
+    max-width: 540px;
+    margin: 0 auto;
     overflow: visible;
   }
 
   .instagram-media,
   .instagram-embed iframe {
+    width: 100% !important;
     max-width: 100% !important;
+    min-width: 0 !important;
   }
+
 
   .social-stage {
     grid-template-columns: 1fr;
