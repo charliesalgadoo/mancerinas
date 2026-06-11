@@ -420,8 +420,7 @@ t {
 }
 
 .hero-philosophy {
-  background-image: url("../assets/img/mancerinas-branding-showcase-philo.webp");
-  opacity: 75%;
+  background-image: url("../assets/img/mancerinas-branding-cedro.jpg");
 }
 
 .hero-menu {
@@ -457,6 +456,10 @@ t {
   margin: 0 auto;
   border-radius: var(--radius-md);
   overflow: visible;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--shadow-soft);
 }
 
 .instagram-media {
@@ -470,6 +473,7 @@ t {
   width: 100% !important;
   min-width: 0 !important;
   max-width: 100% !important;
+  display: block !important;
   margin: 0 auto !important;
 }
 
@@ -498,6 +502,48 @@ t {
 
 .split-home .split-image {
   min-height: 390px;
+}
+
+@media (min-width: 769px) {
+  .split-home {
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 326px);
+    grid-template-areas:
+      "image instagram"
+      "text instagram";
+    column-gap: 48px;
+    row-gap: 26px;
+    align-items: center;
+    padding-top: 18px;
+  }
+
+  .split-home .split-image {
+    grid-area: image;
+    min-height: 320px;
+  }
+
+  .split-home .split-text {
+    grid-area: text;
+    max-width: none;
+  }
+
+  .split-home .instagram-embed {
+    grid-area: instagram;
+    align-self: center;
+    justify-self: center;
+    width: min(100%, 326px);
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .split-home {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 310px);
+    column-gap: 32px;
+  }
+
+  .split-home .instagram-embed {
+    width: min(100%, 310px);
+  }
 }
 
 
@@ -549,7 +595,7 @@ t {
   gap: 30px;
 }
 
-iframe {
+.map-container iframe {
   width: 100%;
   height: 300px;
   display: block;
@@ -1442,7 +1488,7 @@ iframe {
 }
 
 @media (min-width: 768px) {
-  iframe {
+  .map-container iframe {
     height: 450px;
   }
 }
@@ -1462,6 +1508,3 @@ iframe {
     min-height: 190px;
   }
 }
-
-
-
